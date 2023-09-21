@@ -381,6 +381,14 @@ section {
     line-height: 2;
 }
 
+.certification .box-container .box p{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #fff;
+    padding-top: 3rem;
+    font-weight: normal;
+}
+
 .portfolio {
     text-align: center;
 }
