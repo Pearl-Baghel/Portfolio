@@ -1,112 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Pearl Baghel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+    <a href="about.html"><i class="fa-solid fa-user"></i><span>About</span></a>
+    <a href="portfolio.html"><i class="fa-solid fa-briefcase"></i><span>Portfolio</span></a>
+    <a class="active" href="contact.html"><i class="fa-solid fa-envelope"></i><span>Contact</span></a>
+  </nav>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>contact</title>
+  <main class="page stack">
+    <section class="card center-block">
+      <p class="eyebrow">Let's Connect</p>
+      <h1>Contact</h1>
+      <p class="section-intro">I am currently seeking Project Coordinator and Junior Project Manager opportunities. The fastest way to reach me is by email or LinkedIn.</p>
+    </section>
 
-        <!-- font awesome cdn link  -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <section class="contact-grid">
+      <a class="card contact-card" href="mailto:pearlbaghel@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <h2>Email</h2>
+        <p>pearlbaghel@gmail.com</p>
+      </a>
+      <a class="card contact-card" href="tel:+1510-509-8993">
+        <i class="fa-solid fa-phone"></i>
+        <h2>Phone</h2>
+        <p>+1 510-509-8993</p>
+      </a>
+      <a class="card contact-card" href="https://www.linkedin.com/in/pearl-baghel-884807211/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+        <h2>LinkedIn</h2>
+        <p>linkedin.com/in/pearl-baghel-884807211</p>
+      </a>
+      <a class="card contact-card" href="https://github.com/Pearl-Baghel" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        <h2>GitHub</h2>
+        <p>github.com/Pearl-Baghel</p>
+      </a>
+    </section>
 
-        <!-- custom css file link  -->
-        <link rel="stylesheet" href="style.css">
-
-    </head>
-
-    <body>
-
-        <!-- navbar section starts  -->
-
-        <nav class="navbar">
-            <a href="index.html"> <i class="fas fa-home"></i> <span>home</span> </a>
-            <a href="about.html"> <i class="fas fa-user"></i> <span>about</span> </a>
-            <a href="portfolio.html"> <i class="fas fa-briefcase"></i> <span>portfolio</span> </a>
-            <!-- <a href="blogs.html"> <i class="fas fa-blog"></i> <span>blogs</span> </a> -->
-            <a href="contact.html"> <i class="fas fa-address-book"></i> <span>contact</span> </a>
-        </nav>
-
-        <!-- navbar section ends -->
-
-        <!-- contact section starts  -->
-
-        <section class="contact">
-
-            <h1 class="heading"> contact <span>me</span> </h1>
-
-            <div class="row">
-
-                <div class="info-container">
-
-                    <h1>get in touch</h1>
-
-                    <p>Bringing forth a motivated attitude and a variety of
-                        powerful skills in a highly motivated way  with a strong technical foundation and business
-                        acumen.</p>
-
-                    <div class="box-container">
-
-                        <div class="box">
-                            <i class="fas fa-map"></i>
-                            <div class="info">
-                                <h3>address :</h3>
-                                <p>bhopal,<br> madhya pradesh,<br>india</p>
-                            </div>
-                        </div>
-
-                        <div class="box">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <h3>email : </h3>
-                                <p>pearlbaghel@gmail.com</p>
-                            </div>
-                        </div>
-
-                        <div class="box">
-                            <i class="fas fa-phone"></i>
-                            <div class="info">
-                                <h3>number :</h3>
-                                <p>+91 9302770687</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="share">
-                        <a href="https://github.com/Pearl-Baghel" class="fab fa-github"></a>
-                        <a href="https://wa.me/qr/BCDTBJ4ZXIGUM1 " class="fab fa-whatsapp"></a>
-                        <a href="https://instagram.com/pearlbaghel?igshid=OTk0YzhjMDVlZA=="
-                            class="fab fa-instagram"></a>
-                        <a href="https://www.linkedin.com/in/pearl-baghel-884807211/" class="fab fa-linkedin"></a>
-                    </div>
-
-                </div>
-
-                <form action="contact.php" method="POST">
-                    <div class="inputBox">
-                        <input type="text" id="name" placeholder="your name" required>
-                    </div>
-                    <div class="inputBox">
-                        <input type="number" id="number" placeholder="your number" required>
-                    </div>
-                    <div class="inputBox">
-                        <input type="email" id="email" placeholder="your email" required>
-                        <!-- <input type="text" placeholder="your subject"> -->
-                    </div>
-
-                    <textarea name="" placeholder="your message" id="message" cols="10" rows="10"></textarea>
-                    <div>
-                        <button class="btn" type="submit">Send Message</button>
-                    </div>
-                </form>
-
-            </div>
-
-        </section>
-
-        <!-- contact section ends -->
-
-    </body>
-
+    <section class="card contact-cta">
+      <div>
+        <h2>Resume</h2>
+        <p>Download my updated resume for a full overview of my experience, skills, and academic background.</p>
+      </div>
+      <a class="btn" href="Pearl_Baghel_Resume.pdf" target="_blank">Download Resume <i class="fa-solid fa-file-arrow-down"></i></a>
+    </section>
+  </main>
+</body>
 </html>

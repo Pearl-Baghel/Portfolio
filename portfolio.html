@@ -1,109 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Pearl Baghel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<!-- navbar section starts  -->
+  <nav class="navbar">
+    <a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+    <a href="about.html"><i class="fa-solid fa-user"></i><span>About</span></a>
+    <a class="active" href="portfolio.html"><i class="fa-solid fa-briefcase"></i><span>Portfolio</span></a>
+    <a href="contact.html"><i class="fa-solid fa-envelope"></i><span>Contact</span></a>
+  </nav>
 
-<nav class="navbar">
-    <a href="index.html"> <i class="fas fa-home"></i> <span>home</span> </a>
-    <a href="about.html"> <i class="fas fa-user"></i> <span>about</span> </a>
-    <a href="portfolio.html"> <i class="fas fa-briefcase"></i> <span>portfolio</span> </a>
-    <!-- <a href="blogs.html"> <i class="fas fa-blog"></i> <span>blogs</span> </a> -->
-    <a href="contact.html"> <i class="fas fa-address-book"></i> <span>contact</span> </a>
-</nav>
+  <main class="page stack">
+    <section class="card center-block">
+      <p class="eyebrow">Featured Work</p>
+      <h1>Portfolio</h1>
+      <p class="section-intro">Selected projects and experience that reflect my focus on project coordination, operations, planning, and process improvement.</p>
+    </section>
 
-<!-- navbar section ends -->
-
-<!-- portfolio section starts  -->
-
-<section class="portfolio">
-
-    <h1 class="heading"> <span>my</span> work </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="images/img-1.jpg" alt="">
-            <div class="content">
-                <h3>Graphic designing</h3>
-                <p>Creating logos, illustrations, vector, User Interface & designs for webs and apps.</p>
-                <a href="https://github.com/Pearl-Baghel/Graphic-design.git" target="_blank">read more</a>
-            </div>
+    <section class="project-grid">
+      <article class="card project-card accent-red">
+        <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h2>Smart Inventory & Supply Risk Dashboard</h2>
+        <p>Built a Python, Excel, and dashboard-based workflow that connected demand forecasting, component requirements, inventory planning, and purchase recommendations for a small food business.</p>
+        <div class="tag-row">
+          <span>Python</span><span>Excel</span><span>Dashboarding</span><span>Inventory Planning</span>
         </div>
-
-        <div class="box">
-            <img src="images/img-2.jpg" alt="">
-            <div class="content">
-                <h3>Basic responsive website</h3>
-                <p>Basic Static website using Html & css</p>
-                <a href="https://github.com/Pearl-Baghel/Basic-Responsive-Website.git" target="_blank">read more</a>
-            </div>
+        <div class="button-row">
+          <a class="btn" href="Smart_Inventory_and_Supply_Risk_Dashboard.pdf" target="_blank">View Case Study <i class="fa-solid fa-file-lines"></i></a>
         </div>
-       
-        <div class="box">
-            <img src="images/img-3.jpg" alt="">
-            <div class="content">
-                <h3>Mini web development projects</h3>
-                <p>Here are some mini project on learning of web development</p>
-                <a href="https://github.com/Pearl-Baghel/Web-Development-Mini-Projects.git" target="_blank">read more</a>
-            </div>
+      </article>
+
+      <article class="card project-card accent-blue">
+        <div class="project-icon"><i class="fa-solid fa-diagram-project"></i></div>
+        <h2>Transmission Project Simulation</h2>
+        <p>Developed a project charter, scope statement, WBS, schedule, cost baseline, risk assessment, and change control framework for a large-scale infrastructure simulation.</p>
+        <div class="tag-row">
+          <span>Project Planning</span><span>WBS</span><span>Risk Management</span><span>Scheduling</span>
         </div>
+      </article>
 
-        <div class="box">
-            <img src="images/img-4.jpg" alt="">
-            <div class="content">
-                <h3>To-Do list</h3>
-                <p>Basic To-do list project for you daily use, using html css & javascript</p>
-                <a href="https://github.com/Pearl-Baghel/CodeClause_TO-DO_LIST.git" target="_blank">read more</a>
-            </div>
+      <article class="card project-card accent-green">
+        <div class="project-icon"><i class="fa-solid fa-people-group"></i></div>
+        <h2>Operational Workflow Leadership</h2>
+        <p>Currently lead a 4-member team and support 800–1,000 monthly transactions while improving visibility, consistency, and accountability across a fast-paced operational workflow.</p>
+        <div class="tag-row">
+          <span>Team Leadership</span><span>Operations</span><span>Compliance</span><span>Process Improvement</span>
         </div>
+      </article>
 
-        <div class="box">
-            <img src="images/img-5.jpg" alt="">
-            <div class="content">
-                <h3>Contact form with captcha</h3>
-                <p>project on web technology using html css & javascript</p>
-                <a href="https://github.com/Pearl-Baghel/CodeClause_Contact_form-with-Captcha.git" target="_blank">read more</a>
-            </div>
+      <article class="card project-card accent-gold">
+        <div class="project-icon"><i class="fa-solid fa-laptop-code"></i></div>
+        <h2>Portfolio Website Refresh</h2>
+        <p>Repositioned my website from an older developer-focused portfolio to a recruiter-friendly project coordination portfolio aligned with my current career direction.</p>
+        <div class="tag-row">
+          <span>HTML</span><span>CSS</span><span>Personal Branding</span></div>
+        <div class="button-row">
+          <a class="btn btn-secondary" href="https://github.com/Pearl-Baghel/Portfolio.git" target="_blank">GitHub Repo <i class="fa-brands fa-github"></i></a>
         </div>
+      </article>
 
-        <div class="box">
-            <img src="images/img-6.jpg" alt="">
-            <div class="content">
-                <h3>Landing page Website</h3>
-                <p>The landing page of a website is the first page that visitors see when they arrive at your site.</p>
-                <a href="https://github.com/Pearl-Baghel/OIBSIP/tree/main/Landing%20page" target="_blank">read more</a>
-            </div>
+      <article class="card project-card accent-purple">
+        <div class="project-icon"><i class="fa-solid fa-code-branch"></i></div>
+        <h2>Earlier Front-End Practice</h2>
+        <p>My earlier repositories include responsive pages, mini JavaScript projects, and front-end practice work that helped build my technical foundation.</p>
+        <div class="button-row">
+          <a class="btn btn-secondary" href="https://github.com/Pearl-Baghel?tab=repositories" target="_blank">All Repositories <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
-        <div class="box">
-            <img src="images/img-7.jpg" alt="">
-            <div class="content">
-                <h3>GitHub repository</h3>
-                <p>A quick glance at my git hub repositories</p>
-                <a href="https://github.com/Pearl-Baghel?tab=repositories" target="_blank">read more</a>
-            </div>
+      </article>
+
+      <article class="card project-card accent-slate">
+        <div class="project-icon"><i class="fa-brands fa-linkedin"></i></div>
+        <h2>Professional Presence</h2>
+        <p>Connect with me for project coordination, operations, and junior project management opportunities.</p>
+        <div class="button-row">
+          <a class="btn" href="https://www.linkedin.com/in/pearl-baghel-884807211/" target="_blank">LinkedIn <i class="fa-brands fa-linkedin"></i></a>
+          <a class="btn btn-secondary" href="contact.html">Contact <i class="fa-solid fa-envelope"></i></a>
         </div>
-
-    </div>
-
-    <a href="https://www.linkedin.com/in/pearl-baghel-884807211/" class="btn" target="_blank"> Hire Me <i class="fas fa-phone"></i> </a>
-    
-</section>
-
-<!-- portfolio section ends -->
-
+      </article>
+    </section>
+  </main>
 </body>
 </html>
